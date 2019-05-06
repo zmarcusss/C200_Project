@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sensor"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <Button
+        android:id="@+id/stop_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="77dp"
+        android:layout_marginBottom="151dp"
+        android:text="stop"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/start_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="77dp"
+        android:layout_marginBottom="151dp"
+        android:text="start" />
+
+    <ProgressBar
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/start_config"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        style="?android:progressBarStyleHorizontal"
+        android:progress="0"
+        android:progressDrawable="@drawable/circle"
+        android:id="@+id/progressBarConfig"
+        android:rotation="-90"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_config"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:id="@+id/config_countdown"
+        android:textSize="40sp"
+        android:textColor="@color/colorAccent"
+        />
+
+
+
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minute_config"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@id/start_config"
+        android:layout_alignLeft="@+id/progressBarConfig"
+        android:scaleX="1.55"
+        android:scaleY="1.55"
+        >
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/seconds_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_config"
+        android:layout_alignRight="@+id/progressBarConfig"
+        android:layout_marginBottom="55dp"
+        android:scaleX="1.55"
+        android:scaleY="1.55">
+
+    </NumberPicker>
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/dropdownlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp">
+
+    </android.support.v7.widget.AppCompatSpinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dropdownlist"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-105dp"
+        android:layout_marginTop="30dp"
+        android:labelFor="@+id/dropdownlist"
+        android:text="Difficulty Level" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

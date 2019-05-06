@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SimpleData"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_green_legend">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/green"
+            android:text="- Healthy" />
+
+
+        <ImageView
+            android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/green"
+            android:src="@drawable/ic_legend_red">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/green"
+            android:layout_toRightOf="@+id/red"
+            android:text="- Not Healthy" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:src="@drawable/default1" />
+
+        <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:src="@drawable/default2"
+        android:id = "@+id/pinky"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

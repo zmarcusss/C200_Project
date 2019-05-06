@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sensor"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <Button
+        android:id="@+id/stop_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="77dp"
+        android:layout_marginBottom="151dp"
+        android:text="stop"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/start_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="77dp"
+        android:layout_marginBottom="151dp"
+        android:text="start"
+
+
+
+        />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minute_sensor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:layout_above="@id/start_sensor"
+        android:layout_alignLeft="@+id/progressBar"
+        android:scaleX="1.55"
+        android:scaleY="1.55"
+        >
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/seconds_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_sensor"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_marginBottom="55dp"
+        android:scaleX="1.55"
+        android:scaleY="1.55">
+
+    </NumberPicker>
+
+    <ProgressBar
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/start_sensor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        style="?android:progressBarStyleHorizontal"
+        android:progress="0"
+        android:progressDrawable="@drawable/circle"
+        android:id="@+id/progressBar"
+        android:rotation="-90"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_sensor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:id="@+id/sensor_countdown"
+        android:textSize="40sp"
+        android:textColor="@color/colorAccent"
+   />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
